@@ -1,6 +1,7 @@
 <template>
   <div class="index">
     <IndexHeader></IndexHeader>
+    
   </div>
 </template>
 <script>

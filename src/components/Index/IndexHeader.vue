@@ -1,7 +1,12 @@
 <template>
   <div class="indexHeader">
-  	<a class="unbundling" href="unbundling.html">解绑账号</a>
-  	<a class="time" href="javascript:;" id="open">{{time}}</a>
+  	<a class="unbundling" href="javascript:;">解绑账号</a>
+  	<a class="time" href="javascript:;">{{time}}</a>
+
+  	<div class="letter">
+		<a class="head_portrait" href="javascript:;"><img src="../../assets/pic_search_head.png" alt="图片无法显示"></a>
+		<p class="name"></p>		
+	</div>
   </div>
 </template>
 <script>
@@ -45,6 +50,25 @@ export default {
 	    font-size: 0.6183rem;
 	    padding-left: 1.0048rem;
 	    color: #fff;
+    }
+    .letter{
+    	position: absolute;
+	    left: 50%;
+	    top: 3.0917rem;
+	    margin-left: -1.54585rem;
+		    .head_portrait {
+		    width: 3.0917rem;
+		    height: 3.0917rem;
+		    border-radius: 50%;
+		    display: block;
+		    border: 2px solid #a5b1c1;
+		    img{
+		    	width: 100%;
+			    height: 100%;
+			    display: block;
+			    border-radius: 50%;
+		    }
+		}
     }
 }
 </style>
