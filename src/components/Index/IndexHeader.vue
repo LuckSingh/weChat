@@ -1,22 +1,20 @@
 <template>
-  <div class="index">
-    <IndexHeader></IndexHeader>
+  <div class="indexHeader">
+  {{msg}}
   </div>
 </template>
 <script>
-import IndexHeader from './IndexHeader'
 export default {
   name: 'indexHeader',
-  components:{IndexHeader},
   data () {
     return {
-      msg: '首页'
+      msg: '首页-头部'
     }
   }
 }
 </script>
 <style scoped lang='less'>
-.index{
+.indexHeader{
   color:red;
 }
 </style>
